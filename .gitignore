@@ -1,0 +1,25 @@
+bin
+build
+target
+test-output
+work
+activemq-data
+.checkstyle
+.classpath
+.gradle
+.project
+.settings
+.springBeans
+*.class
+*.MF
+
+# IntelliJ DEA
+*.iml
+*.ipr
+*.iws
+out
+.idea
+.rup
+.idea
+.java-version
+*.hprof

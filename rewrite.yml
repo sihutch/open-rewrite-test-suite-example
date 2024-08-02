@@ -1,0 +1,23 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.sihutch.ChangeDependencyExample
+displayName: Change Gradle or Maven dependency example
+recipeList:
+  - org.openrewrite.java.dependencies.ChangeDependency:
+      oldGroupId: javax.servlet
+      oldArtifactId: javax.servlet-api
+      newGroupId: jakarta.servlet
+      newArtifactId: jakarta.servlet-api
+      newVersion: 6.x
+
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.sihutch.ChangeGradleDependencyExample
+displayName: Change Gradle dependency example
+recipeList:
+    - org.openrewrite.gradle.ChangeDependency:
+          oldGroupId: javax.servlet
+          oldArtifactId: javax.servlet-api
+          newGroupId: jakarta.servlet
+          newArtifactId: jakarta.servlet-api
+          newVersion: 6.x
